@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-900 text-dark-100 transition-colors duration-300;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.light {
+  color-scheme: light;
+  @apply bg-white text-dark-900;
+}
+
+/* Gradient backgrounds */
+.gradient-primary {
+  @apply bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600;
+}
+
+.gradient-dark {
+  @apply bg-gradient-to-br from-dark-800 via-dark-900 to-dark-900;
+}
+
+/* Text gradients */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600;
+}
+
+/* Glass morphism effect */
+.glass {
+  @apply bg-white/10 backdrop-blur-xl border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-dark-800/50 backdrop-blur-xl border border-dark-700/50;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-400;
+}
