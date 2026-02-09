@@ -248,3 +248,5 @@ Built with modern web technologies and best practices in mind. Special thanks to
 
 **Last Updated**: February 2026
 **Built with**: Next.js, TypeScript, and Tailwind CSS
+"# lindokuhle-portfolio" 
+"# lindokuhle-portfolio" 
