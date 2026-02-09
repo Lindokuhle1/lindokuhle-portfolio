@@ -58,7 +58,7 @@ export default function HomePage() {
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              I'm{' '}
+              I&apos;'m{' '}
               <GradientText className="inline">
                 Lindokuhle Ngcongo
               </GradientText>
