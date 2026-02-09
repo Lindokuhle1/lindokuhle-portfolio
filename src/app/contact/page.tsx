@@ -39,7 +39,7 @@ export default function ContactPage() {
       <Section id="contact" className="min-h-screen">
         <SectionTitle
           title="Get in Touch"
-          subtitle="Let's start a conversation about your next project"
+          subtitle="Let&apos;s start a conversation about your next project"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -50,7 +50,7 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-8">Let's Connect</h2>
+            <h2 className="text-3xl font-bold mb-8">Let&apos;s Connect</h2>
 
             <div className="space-y-6">
               {contactMethods.map((method, index) => {
@@ -89,8 +89,7 @@ export default function ContactPage() {
             >
               <h3 className="text-xl font-bold mb-2">Response Time</h3>
               <p className="text-dark-300">
-                I typically respond to inquiries within 24 hours. For urgent
-                matters, please call the phone number provided.
+                I typically respond within 24 hours. For urgent matters, please call the phone number provided.
               </p>
             </motion.div>
           </motion.div>
@@ -118,28 +117,28 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {[
             {
-              q: 'What\'s your typical project timeline?',
+              q: 'What&apos;s your typical project timeline?',
               a: 'Most projects take 4-8 weeks depending on scope and complexity. We discuss timelines during the initial consultation.',
             },
             {
               q: 'Do you offer maintenance and support?',
-              a: 'Yes! All projects include support. Extended maintenance packages are available for ongoing needs.',
+              a: 'Yes! All projects include support. Extended maintenance packages are available.',
             },
             {
               q: 'What technologies do you prefer?',
-              a: 'I specialize in .NET, React, Node.js, and cloud platforms (AWS, Azure). I\'m flexible and can work with other modern stacks.',
+              a: 'I specialize in .NET, React, Node.js, and cloud platforms (AWS, Azure). I&apos;m flexible with other modern stacks.',
             },
             {
               q: 'Can you work with existing codebases?',
-              a: 'Absolutely! I have extensive experience improving, refactoring, and extending existing applications.',
+              a: 'Absolutely! I have experience improving and extending existing applications.',
             },
             {
               q: 'Do you provide consultations?',
-              a: 'Yes, I offer free 30-minute consultations to discuss your project requirements and approach.',
+              a: 'Yes, I offer free 30-minute consultations to discuss your project.',
             },
             {
               q: 'How do you handle remote work?',
-              a: 'I work fully remote and have established process for effective communication and collaboration with clients worldwide.',
+              a: 'I work fully remote with structured communication and collaboration processes.',
             },
           ].map((item, index) => (
             <motion.div
