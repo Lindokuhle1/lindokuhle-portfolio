@@ -1,10 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  basePath: "/lindokuhle-portfolio", // repo name
   images: {
-    remotePatterns: [],
+    unoptimized: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
