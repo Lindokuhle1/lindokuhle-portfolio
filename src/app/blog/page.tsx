@@ -12,9 +12,7 @@ export default function BlogPage() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [copiedPostId, setCopiedPostId] = useState<string | null>(null);
 
-  const allTags = Array.from(
-    new Set(blogPosts.flatMap((post) => post.tags))
-  );
+  const allTags = Array.from(new Set(blogPosts.flatMap((post) => post.tags)));
 
   const filteredPosts = selectedTag
     ? blogPosts.filter((post) => post.tags.includes(selectedTag))
@@ -133,9 +131,10 @@ export default function BlogPage() {
                       <ArrowRight size={18} />
                     </motion.button>
 
-                    {/* Social Share Buttons */}
+                    {/* Social Share */}
                     <div className="flex items-center gap-3 mt-6 pt-6 border-t border-dark-700">
                       <span className="text-xs text-dark-400">Share:</span>
+
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
@@ -145,6 +144,7 @@ export default function BlogPage() {
                       >
                         <Linkedin size={18} />
                       </motion.button>
+
                       <motion.button
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
@@ -169,7 +169,7 @@ export default function BlogPage() {
           ) : (
             <div className="text-center py-12">
               <p className="text-dark-400 text-lg">
-                No posts found with tag "{selectedTag}". Try another filter.
+                No posts found with tag &quot;{selectedTag}&quot;. Try another filter.
               </p>
             </div>
           )}
@@ -186,9 +186,9 @@ export default function BlogPage() {
           <h3 className="text-3xl font-bold mb-4">
             Subscribe to My Newsletter
           </h3>
+
           <p className="text-dark-300 mb-8 max-w-2xl mx-auto">
-            Get the latest articles and insights on web development, IoT, and
-            technology trends delivered to your inbox.
+            Get the latest articles and insights on web development, IoT, and technology trends delivered to your inbox.
           </p>
 
           <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
