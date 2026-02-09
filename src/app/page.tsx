@@ -53,20 +53,19 @@ export default function HomePage() {
               className="mb-6"
             >
               <span className="inline-block px-4 py-2 bg-primary-500/20 border border-primary-500/50 rounded-full text-primary-400 text-sm font-medium">
-                 Hello Friend, Welcome to my portfolio
+                Hello Friend, Welcome to my portfolio
               </span>
             </motion.div>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              I&apos;'m{' '}
+              {"I'm "}
               <GradientText className="inline">
                 Lindokuhle Ngcongo
               </GradientText>
             </h1>
 
             <p className="text-xl text-dark-300 mb-8 leading-relaxed">
-              Full-Stack Developer & IoT Engineer specializing in building
-              scalable applications, real-time systems, and cloud solutions.
+              Full-Stack Developer & IoT Engineer specializing in building scalable applications, real-time systems, and cloud solutions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -93,15 +92,8 @@ export default function HomePage() {
           >
             <div className="relative w-full h-96 bg-gradient-to-br from-primary-500/20 to-dark-800 rounded-2xl border border-primary-500/20 flex items-center justify-center overflow-hidden">
               <motion.div
-                animate={{
-                  y: [0, -10, 0],
-                  rotate: [0, 2, 0],
-                }}
-                transition={{
-                  duration: 6,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
+                animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
                 className="relative w-64 h-64"
               >
                 <Image
@@ -117,15 +109,8 @@ export default function HomePage() {
               {[1, 2, 3].map((i) => (
                 <motion.div
                   key={i}
-                  animate={{
-                    opacity: [0.2, 0.5, 0.2],
-                    scale: [1, 1.2, 1],
-                  }}
-                  transition={{
-                    duration: 3,
-                    delay: i * 0.5,
-                    repeat: Infinity,
-                  }}
+                  animate={{ opacity: [0.2, 0.5, 0.2], scale: [1, 1.2, 1] }}
+                  transition={{ duration: 3, delay: i * 0.5, repeat: Infinity }}
                   className="absolute border border-primary-500/20 rounded-full"
                   style={{
                     width: `${70 + i * 70}px`,
@@ -182,7 +167,7 @@ export default function HomePage() {
       <Section className="text-center">
         <SectionTitle
           title="Ready to Start Your Project?"
-          subtitle="Let's work together to bring your ideas to life"
+          subtitle={"Let's work together to bring your ideas to life"}
         />
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
